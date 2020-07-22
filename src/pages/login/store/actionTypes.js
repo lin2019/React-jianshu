@@ -1,0 +1,5 @@
+export const CHANGE_LOGIN = 'login/change_login'
+export const CHANGE_LAYOUT = 'login/change_layout'
+export const CHANGE_ACCOUNT = 'login/change_account'
+export const CHANGE_PASSWORD = 'login/change_password'
+export const RESET_VALUE = 'login/reset_value'
