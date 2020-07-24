@@ -2,6 +2,7 @@ import React,{ Component } from 'react'
 import { connect } from 'react-redux'
 import { actionCreators } from './store'
 import * as components from './components'
+import QrBox from '../../common/qrbox'
 import { 
     HomeWrapper,
     HomeLeft,
@@ -38,6 +39,7 @@ class Home extends Component {
                 </HomeLeft>
                 <HomeRight>
                     <components.Recommend></components.Recommend>
+                    <QrBox></QrBox>
                     <components.Writer></components.Writer>
                 </HomeRight>
                 {isShow ? 

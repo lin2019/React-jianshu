@@ -104,3 +104,45 @@ export const BackTop = styled.div`
     border: 1px solid #ccc;
     cursor: pointer;
 `
+export const WriterWrapper = styled.div`
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+`
+export const WriterHeader = styled.div`
+    font-size: 14px;
+    color: #969696;
+    line-height: 28px;
+    overflow: hidden;
+    span {
+        float: left;
+    }
+`
+export const WriterMain = styled.div`
+
+`
+export const WriterFooter = styled.div`
+
+`
+export const WriterSwitch = styled.div`
+    float: right;
+    cursor: pointer;
+    .spin {
+        margin-right: 5px;
+    }
+`
+export const AuthorItem = styled.div`
+    margin-top: 15px;
+    .avatar{
+        float: left;
+        width: 48px;
+        height: 48px;
+        margin-right: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+        }
+    }
+`
