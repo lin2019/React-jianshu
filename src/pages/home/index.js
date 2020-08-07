@@ -11,8 +11,22 @@ import {
 } from './style'
 
 class Home extends Component {
+    constructor (props) {
+        super(props)
+        this.time = null
+        this.handleBackTop = this.handleBackTop.bind(this)
+    }
+
     handleBackTop () {
-        window.scroll(0, 0)
+        if (this.time) clearInterval(this.time)
+        this.time = setInterval(() => {
+            var scrollHigh = document.documentElement.scrollTop
+            if (scrollHigh) {
+                window.scroll(0, scrollHigh - scrollHigh / 5)
+            } else {
+                clearInterval(this.time)
+            }
+        }, 20)
     }
 
     bindEvents () {

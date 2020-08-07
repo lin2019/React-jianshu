@@ -1,37 +1,62 @@
 import React,{ PureComponent } from 'react'
+import { connect } from 'react-redux'
+import { actionCreators } from '../store'
 import {
     WriterWrapper,
     WriterHeader,
     WriterMain,
     WriterFooter,
-    WriterSwitch
+    WriterSwitch,
+    AuthorItem
 } from '../style'
 
 class Writer extends PureComponent {
     render () {
+        const { writersList, page, getMoreList } = this.props
         return (
             <WriterWrapper>
                 <WriterHeader>
                     <span>推荐作者</span>
-                    <WriterSwitch>
+                    <WriterSwitch onClick={ () => getMoreList(page) }>
                         <span className="iconfont spin">&#xe600;</span>
                         换一批
                     </WriterSwitch>
                 </WriterHeader>
                 <WriterMain>
-                    <a className="avatar">
-                        <img src="https://upload.jianshu.io/users/upload_avatars/5796592/73837104-47e5-4fe9-a5be-054bd50b06f7.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp" alt=""></img>
-                    </a>
-                    <a className="follow">
-                        关注
-                    </a>
-                    <a className="name">乔汉童</a>
-                    <p>写了356.7k字 · 2k喜欢</p>
+                    {
+                        writersList.map((item, index) => {
+                            return (
+                                <AuthorItem key={index}>
+                                    <a className="avatar" href="">
+                                        <img src={item.get('imgUrl')} alt=""></img>
+                                    </a>
+                                    <a className="follow">
+                                        + 关注
+                                    </a>
+                                    <a className="name">{item.get('name')}</a>
+                                    <p>{item.get('des')}</p>
+                                </AuthorItem>
+                            )
+                        })
+                    }
                 </WriterMain>
-                <WriterFooter></WriterFooter>
+                <WriterFooter>
+                    <a>查看全部 ></a>
+                </WriterFooter>
             </WriterWrapper>
         )
     }
 }
 
-export default Writer
+const mapState = (state) => ({
+    writersList: state.getIn(['home', 'writersList']),
+    page: state.getIn(['home', 'w_page'])
+})
+
+const mapDispatch = (dispatch) => ({
+    getMoreList (page) {
+        dispatch(actionCreators.getMoreAuthors(page+1))
+    }
+})
+
+export default connect(mapState, mapDispatch)(Writer)

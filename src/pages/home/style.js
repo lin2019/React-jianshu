@@ -119,10 +119,24 @@ export const WriterHeader = styled.div`
     }
 `
 export const WriterMain = styled.div`
-
+    margin-bottom: 20px;
 `
 export const WriterFooter = styled.div`
-
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    a {
+        position: absolute;
+        padding: 7px 7px 7px 12px;
+        left: 0;
+        width: 100%;
+        font-size: 13px;
+        color: #787878;
+        background-color: #f7f7f7;
+        border: 1px solid #dcdcdc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
 `
 export const WriterSwitch = styled.div`
     float: right;
@@ -133,16 +147,38 @@ export const WriterSwitch = styled.div`
 `
 export const AuthorItem = styled.div`
     margin-top: 15px;
-    .avatar{
+    line-height: 20px;
+    height: 48px;
+    .avatar {
         float: left;
         width: 48px;
         height: 48px;
         margin-right: 10px;
+        cursor: pointer;
         img {
             width: 100%;
             height: 100%;
             border: 1px solid #ddd;
             border-radius: 50%;
         }
+    }
+    .follow {
+        float: right;
+        margin-top: 5px;
+        padding: 0;
+        font-size: 13px;
+        color: #42c02e;
+        cursor: pointer;
+    }
+    .name {
+        padding-top: 5px;
+        margin-right: 60px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    p {
+        margin-top: 2px;
+        font-size: 12px;
+        color: #969696;
     }
 `

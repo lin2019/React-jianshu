@@ -1,11 +1,13 @@
 import { fromJS } from 'immutable'
-import { GET_HOME_DATA, CHANGE_PAGE, TOGGLE_BACK_TOP } from './actionTypes'
+import { GET_HOME_DATA, CHANGE_PAGE, TOGGLE_BACK_TOP, MORE_WRITERS } from './actionTypes'
 const defaultState = fromJS({
     topicList: [],
     articleList: [],
     recommendList: [],
     page: 1,
-    isShow: false
+    isShow: false,
+    writersList: [],
+    w_page: 1
 })
 
 export default (state = defaultState, action) => {
@@ -14,7 +16,8 @@ export default (state = defaultState, action) => {
             return state.merge({
                 topicList: fromJS(action.topicList),
                 articleList: fromJS(action.articleList),
-                recommendList: fromJS(action.recommendList)
+                recommendList: fromJS(action.recommendList),
+                writersList: fromJS(action.writersList)
             })
         case CHANGE_PAGE:
             return state.merge({
@@ -23,6 +26,11 @@ export default (state = defaultState, action) => {
             })
         case TOGGLE_BACK_TOP:
             return state.set('isShow', action.isShow)
+        case MORE_WRITERS:
+            return state.merge({
+                writersList: fromJS(action.data),
+                w_page: action.page
+            })
         default: 
             return state;
     }

@@ -73,37 +73,37 @@
                "id": 1,
                "title": "推荐一款堪比GitBook更好用的在线帮助文档&知识库，无需任何代码基础！",
                "desc": "在使用产品的过程中，经常会遇到问题，需要查看帮助文档和使用说明书。对于线上的产品来说通常都会有帮助文档（帮助中心页面），帮助文档的作用就是对用户...",
-               "imgUrl": "https://upload-images.jianshu.io/upload_images/8578936-de910f410e368cb0?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+               "imgUrl": "https://upload-images.jianshu.io/upload_images/17180993-38f64531580789a1?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
             },
            {
                 "id": 2,
                 "title": "知识管理文档协同不一定要用语雀和石墨，用它效果更好",
                 "desc": "随着信息化建设和电子商务时代的到来，企业核心知识资产大多以电子文档的形式存在，保护这些电子文档就是保护企业核心竞争力。 企业知识库可以科学规范化...",
-                "imgUrl": "https://upload-images.jianshu.io/upload_images/8578936-e9916bde57b0e29c.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+                "imgUrl": "https://upload-images.jianshu.io/upload_images/9938806-b38571295b143fcf?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
             },
             {
                 "id": 3,
                 "title": "10个让你发现新世界的谷歌插件！帮你省下不少钱！",
                 "desc": "分享10个让你发现新世界的谷歌插件! 帮你提升效率的同时，还能省下不少钱！ 01 Simple Allow Copy （万能复制） 一个可以让你...",
-                "imgUrl": "https://upload-images.jianshu.io/upload_images/1994633-0c0c62f1db84e98b.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+                "imgUrl": "https://upload-images.jianshu.io/upload_images/9070317-667ffcc6ed135166.JPEG?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
             },
             {
                 "id": 4,
                 "title": "vue风格规范以及需要注意的点",
                 "desc": "v-for和v-if 不能在一起使用 例子 这个时候可以使用计算属性移步到：https://www.jianshu.com/p/2feb8cad...",
-                "imgUrl": "https://upload-images.jianshu.io/upload_images/5805843-a967e8d61aaf286c.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+                "imgUrl": "https://upload-images.jianshu.io/upload_images/3900546-b615039760ab5587?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
             },
             {
                 "id": 5,
                 "title": "故事优选Ⅱ吊兰也是兰",
                 "desc": "昨夜的雨不知道什么时候收住脚步的。早上出门的时候，老天还没开笑脸，院内大理石地坪上有一滩滩潮湿的水迹，像铺展开的地图。 柔柔的风捎来一阵淡淡的清...",
-                "imgUrl": "https://upload-images.jianshu.io/upload_images/8898425-4c0e8b4712101694.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+                "imgUrl": "https://upload-images.jianshu.io/upload_images/15590149-c541bc6f667b8ac4?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
             },
             {
                 "id": 6,
                 "title": "Webview优化 | 优雅的在手机上阅读代码",
                 "desc": "手机阅读代码之痛 在手机上阅读代码体验肯定不会在电脑上方便，尤其是一些冗长的代码，可能会有几行代码显得很长，又没有做换行处理。正常来说，一般人的...",
-                "imgUrl": "https://upload-images.jianshu.io/upload_images/3005998-edf51cd70a34e960.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+                "imgUrl": "https://upload-images.jianshu.io/upload_images/18529253-0b13112a1b1068ba?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
             }
        ],
        "recommendList": [
@@ -123,6 +123,33 @@
                 "id": 4,
                 "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
             }
+       ],
+       "writersList": [
+          {
+               "name": "乔汉童",
+               "des": "写了356.7k字 · 2k喜欢",
+               "imgUrl": "https://upload.jianshu.io/users/upload_avatars/5796592/73837104-47e5-4fe9-a5be-054bd50b06f7.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
+           },
+           {
+               "name": "简书钻首席小管家",
+               "des": "写了444.9k字 · 173.4k喜欢",
+               "imgUrl": "https://upload.jianshu.io/users/upload_avatars/14715425/e0668349-8c75-43db-8a9d-c388e5f00d0d.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
+           },
+           {
+               "name": "旸晓昆",
+               "des": "写了142.6k字 · 445喜欢",
+               "imgUrl": "https://upload.jianshu.io/users/upload_avatars/8723996/5b2500d0-9768-4d3e-831c-47526ec444ed.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
+           },
+           {
+               "name": "没文化的野狐狸",
+               "des": "写了303.1k字 · 6.1k喜欢",
+               "imgUrl": "https://upload.jianshu.io/users/upload_avatars/6652326/ba6106f4-20eb-4735-885d-561083bd4e55.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
+           },
+           {
+               "name": "Hobbit霍比特人",
+               "des": "写了358.8k字 · 1.3k喜欢",
+               "imgUrl": "https://upload.jianshu.io/users/upload_avatars/7133325/f4370cf6-cf4d-4839-9b54-87beaa767d48?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
+           }
        ]
     }
 }
